@@ -2,35 +2,16 @@
 
 import { motion, Variants } from "framer-motion";
 import { MapPin, Terminal, CircleDot, ArrowRight, Code, Download } from "lucide-react";
-import { useEffect, useState } from "react";
 
-export function Hero() {
-  const [githubStats, setGithubStats] = useState({ repos: 0, followers: 0, commits: 0 });
+interface HeroProps {
+  initialStats: {
+    repos: number;
+    followers: number;
+    commits: number;
+  }
+}
 
-  useEffect(() => {
-    fetch("https://api.github.com/users/HarshDhoriyani")
-      .then(res => res.json())
-      .then(data => {
-        if (data) {
-          setGithubStats(prev => ({ 
-            ...prev,
-            repos: data.public_repos || 0, 
-            followers: data.followers || 0 
-          }));
-        }
-      })
-      .catch(console.error);
-
-    fetch("https://github-contributions-api.jogruber.de/v4/HarshDhoriyani")
-      .then(res => res.json())
-      .then(data => {
-        if (data && data.total) {
-          const totalCommits = Object.values(data.total).reduce((acc: number, val: any) => acc + (typeof val === 'number' ? val : 0), 0);
-          setGithubStats(prev => ({ ...prev, commits: totalCommits as number }));
-        }
-      })
-      .catch(console.error);
-  }, []);
+export function Hero({ initialStats }: HeroProps) {
   const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
@@ -137,15 +118,15 @@ export function Hero() {
             </div>
             <div className="grid grid-cols-3 gap-2 text-center">
               <div>
-                <div className="text-2xl font-bold text-white">{githubStats.commits > 0 ? githubStats.commits : '1.2k+'}</div>
+                <div className="text-2xl font-bold text-white">{initialStats.commits > 0 ? initialStats.commits : '1.2k+'}</div>
                 <div className="text-xs text-white/50">Commits</div>
               </div>
               <div>
-                <div className="text-2xl font-bold text-white">{githubStats.followers}</div>
+                <div className="text-2xl font-bold text-white">{initialStats.followers}</div>
                 <div className="text-xs text-white/50">Followers</div>
               </div>
               <div>
-                <div className="text-2xl font-bold text-white">{githubStats.repos}</div>
+                <div className="text-2xl font-bold text-white">{initialStats.repos}</div>
                 <div className="text-xs text-white/50">Repositories</div>
               </div>
             </div>
