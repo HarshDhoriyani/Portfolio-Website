@@ -80,7 +80,7 @@ export function Hero({ initialStats }: HeroProps) {
               <ArrowRight className="w-4 h-4" />
             </button>
             <a 
-              href="https://drive.google.com/file/d/11sL6fDjQMVazLgnjEksT4W-YtRGr3fPg/view?usp=sharing"
+              href="https://drive.google.com/file/d/1zw4eEoPxeMwI2JHB1y0mesbvfZkducCx/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
               className="px-6 py-3 rounded-full glass text-[#00E5FF] font-semibold flex items-center gap-2 hover:bg-[#00E5FF]/10 transition-colors border border-[#00E5FF]/30 hover:scale-105"

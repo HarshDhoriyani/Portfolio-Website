@@ -77,7 +77,7 @@ export function Contact() {
                 </div>
                 <span>GitHub</span>
               </a>
-              <a href="https://drive.google.com/file/d/11sL6fDjQMVazLgnjEksT4W-YtRGr3fPg/view?usp=sharing" target="_blank" className="flex items-center gap-3 text-white/70 hover:text-[#00E5FF] transition-colors group">
+              <a href="https://drive.google.com/file/d/1zw4eEoPxeMwI2JHB1y0mesbvfZkducCx/view?usp=sharing" target="_blank" className="flex items-center gap-3 text-white/70 hover:text-[#00E5FF] transition-colors group">
                 <div className="p-3 rounded-full bg-white/5 group-hover:bg-[#00E5FF]/10 transition-colors">
                   <FileText className="w-5 h-5" />
                 </div>
