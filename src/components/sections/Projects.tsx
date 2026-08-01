@@ -8,14 +8,6 @@ import { ProjectShape } from "@/components/3d/ProjectShape";
 
 const projects = [
   {
-    title: "Swasthya Mitra",
-    category: "AI / Healthcare",
-    desc: "An intelligent healthcare assistant leveraging LLMs to provide real-time diagnostic support.",
-    tech: ["Next.js", "Python", "Transformers", "Tailwind"],
-    github: "https://github.com/HarshDhoriyani/Swasthya-Mitra",
-    live: "https://swasthya-mitra-pi.vercel.app/"
-  },
-  {
     title: "CivicSpot",
     category: "Full Stack",
     desc: "A full-stack web application that enables citizens to report local issues and helps authorities track and resolve them efficiently.",
@@ -31,18 +23,26 @@ const projects = [
     github: "https://github.com/HarshDhoriyani/SpectraPI"
   },
   {
-    title: "Rail Mind",
-    category: "AI / Predictive Systems",
-    desc: "An intelligent railway tracking and predictive management system designed to optimize scheduling and reduce delays.",
-    tech: ["Python", "Machine Learning", "React", "Node.js"],
-    github: "https://github.com/HarshDhoriyani/rail-mind"
-  },
-  {
     title: "Codebase Memory Engine",
     category: "AI / Developer Tools",
     desc: "An AI-powered engine designed to index, understand, and query entire codebases, acting as an intelligent memory assistant for developers.",
     tech: ["Python", "LLMs", "Vector DB", "FastAPI"],
     github: "https://github.com/HarshDhoriyani/Codebase-Memory-Engine"
+  },
+  {
+    title: "Rail Mind",
+    category: "AI / Predictive Systems",
+    desc: "An intelligent railway tracking and predictive management system designed to optimize scheduling and reduce delays.",
+    tech: ["Python", "Machine Learning", "React", "Node.js"],
+    github: "https://github.com/HarshDhoriyani/rail-mind",
+    live: "https://rail-mind-nine.vercel.app/"
+  },
+  {
+    title: "Swasthya Mitra",
+    category: "AI / Healthcare",
+    desc: "An intelligent healthcare assistant leveraging LLMs to provide real-time diagnostic support.",
+    tech: ["Next.js", "Python", "Transformers", "Tailwind"],
+    github: "https://github.com/HarshDhoriyani/Swasthya-Mitra"
   },
   {
     title: "Task Master",
