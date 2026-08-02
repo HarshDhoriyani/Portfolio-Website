@@ -11,28 +11,28 @@ export function AboutTimeline() {
   });
 
   const timelineHeight = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
-  
+
   const milestones = [
-    { 
-      year: "Sept 2023 – Present", 
-      title: "VIT Bhopal University", 
-      desc: "B.Tech in Computer Science, Specialization in AI and ML\n• GPA: 8.98/10.0\n• Coursework: Data Structures and Algorithms, Computer Networks, Operating Systems, Database Management Systems, Natural Language Processing, Computer Vision, Deep Learning, Data Mining" 
+    {
+      year: "Sept 2023 – Present",
+      title: "VIT Bhopal University",
+      desc: "B.Tech in Computer Science, Specialization in AI and ML\n• GPA: 9.01/10.0\n• Coursework: Data Structures and Algorithms, Computer Networks, Operating Systems, Database Management Systems, Natural Language Processing, Computer Vision, Deep Learning, Data Mining"
     },
-    { 
-      year: "May 2022 - May 2023", 
-      title: "SNBPs International School", 
-      desc: "Higher Secondary Education\n• GPA: 8.45/10.0" 
+    {
+      year: "May 2022 - May 2023",
+      title: "SNBPs International School",
+      desc: "Higher Secondary Education\n• GPA: 8.45/10.0"
     },
-    { 
-      year: "May 2020 - May 2021", 
-      title: "SNBPs International School", 
-      desc: "Secondary Education\n• GPA: 9.45/10.0" 
+    {
+      year: "May 2020 - May 2021",
+      title: "SNBPs International School",
+      desc: "Secondary Education\n• GPA: 9.45/10.0"
     },
   ];
 
   return (
     <section id="about" className="relative py-32 px-6 max-w-5xl mx-auto" ref={containerRef}>
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
@@ -49,8 +49,8 @@ export function AboutTimeline() {
       <div className="relative max-w-4xl mx-auto">
         {/* The Timeline Line */}
         <div className="absolute left-[20px] md:left-1/2 top-0 bottom-0 w-[2px] bg-white/5 md:-translate-x-1/2 rounded-full overflow-hidden">
-          <motion.div 
-            className="w-full bg-gradient-to-b from-[#00E5FF] to-blue-600 shadow-[0_0_15px_#00E5FF]" 
+          <motion.div
+            className="w-full bg-gradient-to-b from-[#00E5FF] to-blue-600 shadow-[0_0_15px_#00E5FF]"
             style={{ height: timelineHeight }}
           />
         </div>
@@ -66,7 +66,7 @@ export function AboutTimeline() {
 
               {/* Content */}
               <div className="w-full pl-12 md:pl-0 md:w-1/2">
-                <motion.div 
+                <motion.div
                   initial={{ opacity: 0, x: i % 2 === 0 ? 50 : -50 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true, margin: "-100px" }}
